@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="DocDashPane" prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1 " fx:controller="com.GagulaEyeClinic.controller.DocDashController">
+   <children>
+      <ImageView fitHeight="228.0" fitWidth="463.0" layoutX="22.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/DashTiles/rectangle31.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="228.0" fitWidth="463.0" layoutX="542.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/DashTiles/rectangle32.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="228.0" fitWidth="463.0" layoutX="1059.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/DashTiles/rectangle33.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="228.0" fitWidth="463.0" layoutX="22.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/DashTiles/rectangle34.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="228.0" fitWidth="463.0" layoutX="543.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/DashTiles/rectangle36.PNG" />
+         </image>
+      </ImageView>
+      <StackedBarChart fx:id="patientBarChart" layoutX="10.0" layoutY="522.0" prefHeight="296.0" prefWidth="1000.0" style="-fx-background-color: white;">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+      <Label layoutX="85.0" layoutY="168.0" text="Appointments" textFill="WHITE">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="580.0" layoutY="167.0" text="Treated Patients" textFill="WHITE">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="1083.0" layoutY="168.0" text="Registed Patients" textFill="WHITE">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="440.0" text="Warning Requests" textFill="WHITE">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="260.0" fitWidth="397.0" layoutX="596.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/DashTiles/DashFonts/w2_6.PNG" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblAppointmentsCount" alignment="CENTER" layoutX="22.0" layoutY="23.0" prefHeight="176.0" prefWidth="465.0" text="120" textFill="WHITE">
+         <font>
+            <Font size="120.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTreatedPatientsCount" alignment="CENTER" layoutX="543.0" layoutY="23.0" prefHeight="176.0" prefWidth="462.0" text="2000" textFill="WHITE">
+         <font>
+            <Font size="120.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRegistedPatientsCount" alignment="CENTER" layoutX="1059.0" layoutY="23.0" prefHeight="176.0" prefWidth="462.0" text="580" textFill="WHITE">
+         <font>
+            <Font size="120.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWarningRequestsCount" alignment="CENTER" layoutX="19.0" layoutY="282.0" prefHeight="176.0" prefWidth="465.0" text="04" textFill="WHITE">
+         <font>
+            <Font size="120.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

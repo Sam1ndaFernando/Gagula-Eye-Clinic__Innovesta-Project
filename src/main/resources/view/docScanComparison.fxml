@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GagulaEyeClinic.controller.docScanComparisonController">
+   <children>
+      <JFXProgressBar fx:id="ScaningBar" layoutX="438.0" layoutY="692.0" prefWidth="668.5" />
+      <Label layoutX="452.0" layoutY="16.0" opacity="0.6" text="Scan Comparison" textFill="WHITE">
+         <font>
+            <Font size="140.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="262.0" text="Picture 01" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="203.0" layoutY="320.0" prefHeight="301.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 10; -fx-border-radius: 10;" />
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="-1.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="1034.0" layoutY="263.0" text="Picture 02" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="pic01Pane" layoutX="213.0" layoutY="330.0" prefHeight="301.0" prefWidth="300.0">
+         <children>
+            <ImageView fx:id="pic01ImgPane" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 10; -fx-border-radius: 10;" />
+            <JFXButton fx:id="btnSelectBtn01" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#btnSelectBtn01OnAction" prefHeight="300.0" prefWidth="300.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pic02Pane" layoutX="968.0" layoutY="330.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <ImageView fx:id="pic02ImgPane" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton fx:id="btnSelectPic02" contentDisplay="GRAPHIC_ONLY" onAction="#btnSelectPic02OnAction" prefHeight="300.0" prefWidth="300.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="732.0" layoutY="653.0" text="Scanning" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBack" layoutX="777.0" layoutY="751.0" onAction="#btnBackOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnComparision" graphicTextGap="0.0" layoutX="1048.0" layoutY="751.0" onAction="#btnComparisionOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: #00FF0A;" text="Comparison" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnFinish" layoutX="1300.0" layoutY="751.0" onAction="#btnFinishOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: #FF00A8;" text="Finish" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
