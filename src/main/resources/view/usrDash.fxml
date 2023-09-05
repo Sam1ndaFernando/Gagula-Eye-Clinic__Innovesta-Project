@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GagulaEyeClinic.controller.UsrDashController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="19.0" opacity="0.6" prefHeight="228.0" prefWidth="463.0" style="-fx-background-color: black; -fx-background-radius: 30;">
+         <children>
+            <Label fx:id="lblAppoiments" alignment="CENTER" contentDisplay="CENTER" layoutX="109.0" prefHeight="114.0" prefWidth="244.0" text="23" textFill="WHITE">
+               <font>
+                  <Font size="120.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="160.0" prefHeight="58.0" prefWidth="294.0" text="Appointments" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="542.0" layoutY="19.0" opacity="0.6" prefHeight="228.0" prefWidth="463.0" style="-fx-background-color: black; -fx-background-radius: 30;">
+         <children>
+            <Label fx:id="lblAvailableDoc" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="110.0" layoutY="1.0" prefHeight="114.0" prefWidth="244.0" text="10" textFill="WHITE">
+               <font>
+                  <Font size="120.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="160.0" prefHeight="58.0" prefWidth="294.0" text="Available Doctors" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="1066.0" layoutY="19.0" opacity="0.6" prefHeight="228.0" prefWidth="463.0" style="-fx-background-color: black; -fx-background-radius: 30;">
+         <children>
+            <Label fx:id="lblAvailableEmp" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="110.0" prefHeight="114.0" prefWidth="244.0" text="65" textFill="WHITE">
+               <font>
+                  <Font size="120.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="67.0" layoutY="159.0" prefHeight="58.0" prefWidth="330.0" text="Available Employees" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="271.0" opacity="0.6" prefHeight="228.0" prefWidth="463.0" style="-fx-background-color: black; -fx-background-radius: 30;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="157.0" prefHeight="58.0" prefWidth="350.0" style="-fx-text-fill: red;" text="Warning Requests" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblWarningReq" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" prefHeight="114.0" prefWidth="244.0" style="-fx-text-fill: red;" text="04" textFill="WHITE">
+               <font>
+                  <Font size="120.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="542.0" layoutY="271.0" opacity="0.6" prefHeight="228.0" prefWidth="463.0" style="-fx-background-color: black; -fx-background-radius: 30;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="30.0" prefHeight="58.0" prefWidth="347.0" style="-fx-text-fill: #FF7A00;" text="Stock Running Low" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="100.0" prefHeight="58.0" prefWidth="462.0" text="Aloe vera (RM-001)" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="145.0" prefHeight="58.0" prefWidth="462.0" text="Centella asiatica (RM-002)" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="1066.0" layoutY="271.0" opacity="0.6" prefHeight="545.0" prefWidth="463.0" style="-fx-background-color: black; -fx-background-radius: 30;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="91.0" prefHeight="114.0" prefWidth="244.0" text="56" textFill="WHITE">
+               <font>
+                  <Font size="180.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="389.0" prefHeight="73.0" prefWidth="387.0" text="Current Number" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <BarChart layoutX="20.0" layoutY="513.0" prefHeight="310.0" prefWidth="985.0" style="-fx-background-color: transparent; -fx-border-radius: 30;">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
