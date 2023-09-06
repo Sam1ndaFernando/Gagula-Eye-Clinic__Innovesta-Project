@@ -69,12 +69,12 @@
                   <Font size="35.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="100.0" prefHeight="58.0" prefWidth="462.0" text="Aloe vera (RM-001)" textFill="WHITE">
+            <Label fx:id="lblMaterial01" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="100.0" prefHeight="58.0" prefWidth="462.0" text="Aloe vera (RM-001)" textFill="WHITE">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="145.0" prefHeight="58.0" prefWidth="462.0" text="Centella asiatica (RM-002)" textFill="WHITE">
+            <Label fx:id="lblMaterial02" alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="145.0" prefHeight="58.0" prefWidth="462.0" text="Centella asiatica (RM-002)" textFill="WHITE">
                <font>
                   <Font size="30.0" />
                </font>
@@ -82,7 +82,7 @@
          </children></AnchorPane>
       <AnchorPane layoutX="1066.0" layoutY="271.0" opacity="0.6" prefHeight="545.0" prefWidth="463.0" style="-fx-background-color: black; -fx-background-radius: 30;">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="91.0" prefHeight="114.0" prefWidth="244.0" text="56" textFill="WHITE">
+            <Label fx:id="lblCurrentNumber" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="91.0" prefHeight="114.0" prefWidth="244.0" text="56" textFill="WHITE">
                <font>
                   <Font size="180.0" />
                </font>
@@ -93,7 +93,7 @@
                </font>
             </Label>
          </children></AnchorPane>
-      <BarChart layoutX="20.0" layoutY="513.0" prefHeight="310.0" prefWidth="985.0" style="-fx-background-color: transparent; -fx-border-radius: 30;">
+      <BarChart fx:id="barChartPatients" layoutX="20.0" layoutY="513.0" prefHeight="310.0" prefWidth="985.0" style="-fx-background-color: transparent; -fx-border-radius: 30;">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
