@@ -1,4 +1,5 @@
 package com.GagulaEyeClinic.util;
 
-public class Routes {
+public enum Routes {
+    LOGINPAGE, WELCOMEPAGE,
 }

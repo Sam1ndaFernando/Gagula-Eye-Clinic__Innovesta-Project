@@ -3,43 +3,44 @@ package com.GagulaEyeClinic.controller;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
-import com.jfoenix.controls.JFXTimePicker;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 
-public class DocMedicineController {
+public class UserPatientsController {
 
     @FXML
-    private AnchorPane MedicinePane;
+    private AnchorPane usrPatientPane;
 
     @FXML
     private JFXTextField txtPatientAge;
 
     @FXML
-    private JFXComboBox<?> ComBoxGender;
+    private JFXComboBox<?> comBoxGender;
 
     @FXML
-    private JFXButton btnBack;
+    private JFXTextField txtPatientId;
+
+    @FXML
+    private JFXTextField txtPatientName;
+
+    @FXML
+    private JFXTextField txtPatientAddress;
+
+    @FXML
+    private JFXTextField txtPatientNIC;
+
+    @FXML
+    private JFXTextField txtContactNo;
 
     @FXML
     private JFXButton btnAdd;
 
     @FXML
-    private JFXButton btnFinish;
+    private JFXButton btnUpdate;
 
     @FXML
-    private JFXComboBox<?> comBoxPatientId;
-
-    @FXML
-    private JFXTimePicker timePickr;
-
-    @FXML
-    private TextArea txtSpeech;
-
-    @FXML
-    private JFXButton btnVoice;
+    private JFXButton btnDelete;
 
     @FXML
     private JFXButton btnView;
@@ -50,22 +51,17 @@ public class DocMedicineController {
     }
 
     @FXML
-    void btnBackOnAction(ActionEvent event) {
+    void btnDeleteOnAction(ActionEvent event) {
 
     }
 
     @FXML
-    void btnFinishOnAction(ActionEvent event) {
+    void btnUpdateOnAction(ActionEvent event) {
 
     }
 
     @FXML
     void btnViewOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void btnVoiceOnAction(ActionEvent event) {
 
     }
 

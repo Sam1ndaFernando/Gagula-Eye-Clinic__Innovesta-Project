@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXProgressBar?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -12,6 +11,5 @@
             <Image url="@../assets/Ui/loadingScreen.JPG" />
          </image>
       </ImageView>
-      <JFXProgressBar fx:id="ldBar" layoutX="234.0" layoutY="538.0" prefWidth="668.0" />
    </children>
 </AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="mediPane" prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.UsrMedicineController">
+   <children>
+      <Label layoutX="661.0" layoutY="-9.0" opacity="0.6" prefHeight="292.0" prefWidth="884.0" text="Medicine " textFill="WHITE">
+         <font>
+            <Font size="200.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comBoxDocID" editable="true" focusColor="WHITE" layoutX="812.0" layoutY="443.0" onAction="#comBoxDocIDOnAction" prefHeight="55.0" prefWidth="352.0" promptText="Doctor Id" style="-fx-font-size: 25;" unFocusColor="WHITE" visibleRowCount="5" />
+      <JFXTextField fx:id="txtMedicineId" focusColor="WHITE" layoutX="217.0" layoutY="293.0" promptText="Medicine Id" unFocusColor="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMedicineName" focusColor="WHITE" layoutX="217.0" layoutY="443.0" promptText="Medicine Name" unFocusColor="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="comBoxPatientId" editable="true" focusColor="WHITE" layoutX="812.0" layoutY="293.0" onAction="#comBoxPatientIdOnAction" prefHeight="55.0" prefWidth="352.0" promptText="Patient id" style="-fx-font-size: 25;" unFocusColor="WHITE" visibleRowCount="5" />
+      <TextArea fx:id="txtDiscription" layoutX="217.0" layoutY="593.0" prefHeight="200.0" prefWidth="352.0" promptText="Description ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextArea>
+      <JFXButton fx:id="btnAdd" layoutX="733.0" layoutY="719.0" onAction="#btnAddOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: #5C6CFF;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" graphicTextGap="0.0" layoutX="1004.0" layoutY="719.0" onAction="#btnUpdateOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: #EB00FF;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="1256.0" layoutY="719.0" onAction="#btnDeleteOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: #FF0000;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
