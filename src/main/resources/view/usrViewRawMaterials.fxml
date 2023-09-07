@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="usrViewRawMaterialsPane" prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GagulaEyeClinic.controller.UsrViewRawMaterialsController">
+   <children>
+      <TableView fx:id="tblViewRawMaterials" fixedCellSize="2.0" layoutX="177.0" layoutY="222.0" prefHeight="491.0" prefWidth="1216.0">
+        <columns>
+          <TableColumn fx:id="colMatID" prefWidth="231.3333282470703" text="Material Id" />
+          <TableColumn fx:id="colMatName" prefWidth="331.6666717529297" text=" Material Name" />
+            <TableColumn fx:id="colQty" minWidth="5.66668701171875" prefWidth="135.6666259765625" text="Qty" />
+            <TableColumn fx:id="colSupplieID" prefWidth="251.3333740234375" text=" Supplie id" />
+            <TableColumn fx:id="colLocation" prefWidth="262.0" text="Location" />
+        </columns>
+      </TableView>
+      <Label layoutX="646.0" layoutY="-25.0" opacity="0.6" prefHeight="292.0" prefWidth="885.0" text="View Raw materials" textFill="WHITE">
+         <font>
+            <Font size="100.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBack" layoutX="53.0" layoutY="757.0" onAction="#btnBackOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: white;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

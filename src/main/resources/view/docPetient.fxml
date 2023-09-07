@@ -39,7 +39,7 @@
             <Font size="30.0" />
          </font>
       </JFXTextField>
-      <JFXComboBox fx:id="ComBoxGender" editable="true" focusColor="WHITE" layoutX="718.0" layoutY="508.0" prefHeight="55.0" prefWidth="352.0" promptText="Gender" style="-fx-font-size: 25;" unFocusColor="WHITE" visibleRowCount="5" />
+      <JFXComboBox fx:id="ComBoxGender" editable="true" focusColor="WHITE" layoutX="718.0" layoutY="508.0" prefHeight="55.0" prefWidth="352.0" promptText="Gender" style="-fx-font-size: 30;" unFocusColor="WHITE" visibleRowCount="5" />
       <JFXButton fx:id="btnScan" layoutX="713.0" layoutY="692.0" onAction="#btnScanOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: #00FF0A;" text="Add" textFill="WHITE">
          <font>
             <Font size="25.0" />

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="usrViewSuppliersPane" prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GagulaEyeClinic.controller.UsrViewSuppliersController">
+   <children>
+      <TableView fx:id="tblViewSuppliers" fixedCellSize="2.0" layoutX="236.0" layoutY="234.0" prefHeight="491.0" prefWidth="1093.0">
+        <columns>
+          <TableColumn fx:id="colSupID" prefWidth="165.6666717529297" text=" Supplier Id" />
+          <TableColumn fx:id="colSupName" prefWidth="244.66665649414062" text="Supplier Name" />
+            <TableColumn fx:id="colSupAddress" prefWidth="210.33334350585938" text="Supplier Address" />
+            <TableColumn fx:id="colNic" prefWidth="202.33331298828125" text="NIC" />
+            <TableColumn fx:id="colContactNum" prefWidth="265.0" text="Contact No" />
+        </columns>
+      </TableView>
+      <Label layoutX="546.0" layoutY="-35.0" opacity="0.6" prefHeight="292.0" prefWidth="982.0" text="View Suppliers" textFill="WHITE">
+         <font>
+            <Font size="150.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBack" layoutX="53.0" layoutY="762.0" onAction="#btnBackOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: white;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

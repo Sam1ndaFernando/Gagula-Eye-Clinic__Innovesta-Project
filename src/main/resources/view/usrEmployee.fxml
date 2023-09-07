@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="employeePane" prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GagulaEyeClinic.controller.UsrEmployeeController">
+   <children>
+      <JFXTextField fx:id="txtEmployeeId" focusColor="WHITE" layoutX="134.0" layoutY="293.0" onAction="#txtEmployeeIdOnAction" promptText="Employee Id" unFocusColor="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmployeeName" focusColor="WHITE" layoutX="134.0" layoutY="444.0" onAction="#txtEmployeeNameOnAction" promptText="Employee Name" unFocusColor="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtJobRole" focusColor="WHITE" layoutX="134.0" layoutY="611.0" onAction="#txtJobRoleOnAction" promptText="Job Role" unFocusColor="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContactNo" focusColor="WHITE" layoutX="721.0" layoutY="293.0" onAction="#txtContactNoOnAction" promptText="Contact No" unFocusColor="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="WHITE" layoutX="716.0" layoutY="444.0" onAction="#txtAddressOnAction" promptText="Address" unFocusColor="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="dtePicker" layoutX="719.0" layoutY="611.0" prefHeight="55.0" prefWidth="352.0" promptText="Date" style="-fx-font-size: 25;" />
+      <Label layoutX="657.0" layoutY="11.0" opacity="0.6" prefHeight="292.0" prefWidth="875.0" text="Employee" textFill="WHITE">
+         <font>
+            <Font size="200.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdd" layoutX="753.0" layoutY="739.0" onAction="#btnAddOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: #5C6CFF;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" graphicTextGap="0.0" layoutX="1024.0" layoutY="739.0" onAction="#btnUpdateOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: #EB00FF;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="1276.0" layoutY="739.0" onAction="#btnDeleteOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: #FF0000;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnView" layoutX="1276.0" layoutY="634.0" onAction="#btnViewOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: white;" text="View" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

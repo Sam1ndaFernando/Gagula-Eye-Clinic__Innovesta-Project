@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="tblViewAppoiments" prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GagulaEyeClinic.controller.UsrViewAppoimentsController">
+   <children>
+      <TableView fx:id="tblAppoiments" fixedCellSize="2.0" layoutX="137.0" layoutY="234.0" prefHeight="491.0" prefWidth="1286.0">
+        <columns>
+          <TableColumn fx:id="colAppoimentID" prefWidth="195.33334350585938" text="Appointments Id" />
+          <TableColumn fx:id="colDocID" prefWidth="188.66665649414062" text="Doctor  id" />
+            <TableColumn fx:id="colPatientID" prefWidth="329.0" text=" Patient id" />
+            <TableColumn fx:id="colPurpose" prefWidth="257.0" text="Purpose" />
+            <TableColumn fx:id="colDate" prefWidth="143.3333740234375" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="172.6666259765625" text="Time" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnBack" layoutX="53.0" layoutY="762.0" onAction="#btnBackOnAction" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 10; -fx-background-color: #1B5065; -fx-border-radius: 10; -fx-border-color: white;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="447.0" layoutY="-28.0" opacity="0.6" prefHeight="292.0" prefWidth="1100.0" text="View Appointments " textFill="WHITE">
+         <font>
+            <Font size="120.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
