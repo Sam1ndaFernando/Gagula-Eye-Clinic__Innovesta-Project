@@ -4,8 +4,11 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class UserDashboardController {
 
@@ -60,42 +63,66 @@ public class UserDashboardController {
     }
 
     @FXML
-    void btnAppoimentsOnAction(ActionEvent event) {
+    void btnAppoimentsOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/usrAppointments.fxml"));
+        userSecPane.getChildren().clear();
+        userSecPane.getChildren().add(load);
 
     }
 
     @FXML
-    void btnEmployeesOnAction(ActionEvent event) {
+    void btnEmployeesOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/usrEmployee.fxml"));
+        userSecPane.getChildren().clear();
+        userSecPane.getChildren().add(load);
 
     }
 
     @FXML
-    void btnMedicineOnAction(ActionEvent event) {
+    void btnMedicineOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/usrMedicine.fxml"));
+        userSecPane.getChildren().clear();
+        userSecPane.getChildren().add(load);
 
     }
 
     @FXML
-    void btnRawMaterialOnAction(ActionEvent event) {
+    void btnRawMaterialOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/usrRawMaterials.fxml"));
+        userSecPane.getChildren().clear();
+        userSecPane.getChildren().add(load);
 
     }
 
     @FXML
-    void btnSuppliersOnAction(ActionEvent event) {
+    void btnSuppliersOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/userPatients.fxml"));
+        userSecPane.getChildren().clear();
+        userSecPane.getChildren().add(load);
 
     }
 
     @FXML
-    void homeBtnOnAction(ActionEvent event) {
+    void homeBtnOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/usrDash.fxml"));
+        userSecPane.getChildren().clear();
+        userSecPane.getChildren().add(load);
 
     }
 
     @FXML
-    void logoutBtnOnAction(ActionEvent event) {
+    void logoutBtnOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/loginScreen.fxml"));
+        userSecPane.getChildren().clear();
+        userSecPane.getChildren().add(load);
 
     }
 
     @FXML
-    void patientBtnOnAction(ActionEvent event) {
+    void patientBtnOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/userPatients.fxml"));
+        userSecPane.getChildren().clear();
+        userSecPane.getChildren().add(load);
 
     }
 

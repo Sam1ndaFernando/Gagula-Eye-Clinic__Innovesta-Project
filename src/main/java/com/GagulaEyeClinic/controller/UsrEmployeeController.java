@@ -5,7 +5,10 @@ import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class UsrEmployeeController {
 
@@ -58,7 +61,10 @@ public class UsrEmployeeController {
     }
 
     @FXML
-    void btnViewOnAction(ActionEvent event) {
+    void btnViewOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/usrViewSuppliers.fxml"));
+        employeePane.getChildren().clear();
+        employeePane.getChildren().add(load);
 
     }
 

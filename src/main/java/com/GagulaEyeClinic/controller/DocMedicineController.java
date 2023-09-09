@@ -5,9 +5,12 @@ import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTimePicker;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class DocMedicineController {
 
@@ -50,8 +53,10 @@ public class DocMedicineController {
     }
 
     @FXML
-    void btnBackOnAction(ActionEvent event) {
-
+    void btnBackOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/docPetient.fxml"));
+        MedicinePane.getChildren().clear();
+        MedicinePane.getChildren().add(load);
     }
 
     @FXML

@@ -3,9 +3,12 @@ package com.GagulaEyeClinic.controller;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class UsrViewRawMaterialsController {
 
@@ -34,7 +37,10 @@ public class UsrViewRawMaterialsController {
     private JFXButton btnBack;
 
     @FXML
-    void btnBackOnAction(ActionEvent event) {
+    void btnBackOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/usrRawMaterials.fxml"));
+        usrViewRawMaterialsPane.getChildren().clear();
+        usrViewRawMaterialsPane.getChildren().add(load);
 
     }
 

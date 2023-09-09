@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mediPane" prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.UsrMedicineController">
+<AnchorPane fx:id="mediPane" prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GagulaEyeClinic.controller.UsrMedicineController">
    <children>
       <JFXComboBox fx:id="comBoxDocID" editable="true" focusColor="WHITE" layoutX="812.0" layoutY="443.0" onAction="#comBoxDocIDOnAction" prefHeight="55.0" prefWidth="352.0" promptText="Doctor Id" style="-fx-font-size: 25;" unFocusColor="WHITE" visibleRowCount="5" />
       <Label layoutX="661.0" layoutY="-9.0" opacity="0.6" prefHeight="292.0" prefWidth="884.0" text="Medicine " textFill="WHITE">

@@ -7,17 +7,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GagulaEyeClinic.controller.docScanComparisonController">
+<AnchorPane fx:id="scanComparisonPane" prefHeight="846.0" prefWidth="1547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GagulaEyeClinic.controller.docScanComparisonController">
    <children>
       <JFXProgressBar fx:id="ScaningBar" layoutX="438.0" layoutY="692.0" prefWidth="668.5" />
-      <Label layoutX="452.0" layoutY="16.0" opacity="0.6" text="Scan Comparison" textFill="WHITE">
-         <font>
-            <Font size="140.0" />
-         </font>
-      </Label>
       <Label layoutX="270.0" layoutY="262.0" text="Picture 01" textFill="WHITE">
          <font>
             <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="452.0" layoutY="16.0" opacity="0.6" text="Scan Comparison" textFill="WHITE">
+         <font>
+            <Font size="140.0" />
          </font>
       </Label>
       <AnchorPane layoutX="203.0" layoutY="320.0" prefHeight="301.0" prefWidth="300.0">

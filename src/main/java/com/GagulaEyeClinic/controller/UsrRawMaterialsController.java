@@ -5,7 +5,10 @@ import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class UsrRawMaterialsController {
 
@@ -58,7 +61,10 @@ public class UsrRawMaterialsController {
     }
 
     @FXML
-    void btnViewOnAction(ActionEvent event) {
+    void btnViewOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/usrViewRawMaterials.fxml"));
+        rawMaterialsPane.getChildren().clear();
+        rawMaterialsPane.getChildren().add(load);
 
     }
 

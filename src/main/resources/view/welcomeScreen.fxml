@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -23,5 +24,6 @@
             <Font name="Segoe UI" size="40.0" />
          </font>
       </Label>
+      <JFXButton fx:id="btnWelcomePge" contentDisplay="GRAPHIC_ONLY" onAction="#btnWelcomePgeOnAction" prefHeight="1080.0" prefWidth="1920.0" />
    </children>
 </AnchorPane>
