@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Appinitializer" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../../../../Program Files/Java/jdk-11.0.17" />
+    <option name="MAIN_CLASS_NAME" value="com.GagulaEyeClinic.Appinitializer" />
+    <module name="GagulaEyeClinic" />
+    <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
