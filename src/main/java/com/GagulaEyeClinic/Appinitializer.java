@@ -15,5 +15,6 @@ public class Appinitializer extends Application {
     public void start(Stage stage) throws Exception {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/welcomeScreen.fxml"))));
         stage.show();
+        stage.setFullScreen(true);
     }
 }

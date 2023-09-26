@@ -7,7 +7,10 @@ import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTimePicker;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class UsrAppointmentsController {
 
@@ -60,8 +63,10 @@ public class UsrAppointmentsController {
     }
 
     @FXML
-    void btnViewOnAction(ActionEvent event) {
-
+    void btnViewOnAction(ActionEvent event) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/view/usrViewAppoiments.fxml"));
+        useAppoimentsPane.getChildren().clear();
+        useAppoimentsPane.getChildren().add(load);
     }
 
     @FXML

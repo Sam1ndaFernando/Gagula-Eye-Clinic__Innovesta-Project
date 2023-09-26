@@ -10,7 +10,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 
+import java.awt.*;
+import java.net.URI;
+
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 public class DocMedicineController {
 
@@ -71,6 +75,13 @@ public class DocMedicineController {
 
     @FXML
     void btnVoiceOnAction(ActionEvent event) {
+        String gitRepoUrl = "https://kusaldemo.github.io/speech-to-text-360/speech.html"; // Git repository URL
+
+        try {
+            Desktop.getDesktop().browse(new URI(gitRepoUrl));
+        } catch (IOException | URISyntaxException ex) {
+            ex.printStackTrace();
+        }
 
     }
 
